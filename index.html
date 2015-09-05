@@ -6,6 +6,7 @@
 
 	<link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
 	<link rel="stylesheet" type="text/css" href="stylesheets/github-dark.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="stylesheets/main.css" media="screen">
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
 	<script type="text/javascript" src="js/underscore/underscore.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
@@ -21,20 +22,27 @@
 	      </div>
 	</header>
 
-	<div class="level-container">
+	<div class="container level-container">
 	</div>
 
 	<script type="text/template" id="level-template">
 	    <div class="level">
 		<div class="level-number">Level <%- levelNumber %></div>
 		<div class="url">Url: <a href="<%- url %>"><%- url %></a></div>
-		<div class="username">Username: <%- username %></div>
-		<div class="password">Password: <%- password %></div>
-		<div class="data">
-		    Data:
-		    <!-- TODO: Fix this behaviour -->
-		    <%- data %>
-	        </div>
+		<% if (username) { %>
+		    <div class="username">Username: <%- username %></div>
+		    <div class="password">Password: <%- password %></div>
+		<% } %>
+		<div class="linked-from">Linked From: <%- linkedFrom %></div>
+		<% if (!_.isEmpty(data)) { %>
+		    <div class="data">
+			Extra Data:
+			<!-- TODO: Fix this behaviour -->
+			<% _.each(data, function (key, val) { %>
+			    <div class="data-field"><%- key %>: <%- val %></div>
+			<% }) %>
+		    </div>
+		<% } %>
 	    </div>
         </script>
     </body>

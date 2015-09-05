@@ -5,8 +5,8 @@
 		"url": "http://ebony.extra.hu/ailyn/levelone.html",
 		"username": null,
 		"password": null,
+		"linkedFrom": "N/A",
 		"data": {
-			"notes": ""
 		}
 	},
 	{
@@ -14,8 +14,8 @@
 		"url": "http://ebony.extra.hu/ailyn/intheshade.html",
 		"username": null,
 		"password": null,
+		"linkedFrom": 1,
 		"data": {
-			"notes": ""
 		}
 	},
 	{
@@ -23,17 +23,8 @@
 		"url": "http://ebony.extra.hu/ailyn/oei.html",
 		"username": null,
 		"password": null,
+		"linkedFrom": 2,
 		"data": {
-			"notes": ""
-		}
-	},
-	{
-		"levelNumber": 3,
-		"url": "http://ebony.extra.hu/ailyn/oei.html",
-		"username": null,
-		"password": null,
-		"data": {
-			"notes": ""
 		}
 	},
 	{
@@ -41,8 +32,8 @@
 		"url": "http://ebony.extra.hu/ailyn/obelisk.html",
 		"username": null,
 		"password": null,
+		"linkedFrom": 3,
 		"data": {
-			"notes": ""
 		}
 	},
 	{
@@ -50,8 +41,8 @@
 		"url": "http://ebony.extra.hu/ailyn/gettingthere.html",
 		"username": null,
 		"password": null,
+		"linkedFrom": 4,
 		"data": {
-			"notes": ""
 		}
 	},
 	{
@@ -59,8 +50,8 @@
 		"url": "http://ebony.extra.hu/ailyn/thisway.html",
 		"username": null,
 		"password": null,
+		"linkedFrom": 5,
 		"data": {
-			"notes": ""
 		}
 	},
 	{
@@ -68,8 +59,8 @@
 		"url": "http://ebony.extra.hu/ailyn/rosered.html",
 		"username": null,
 		"password": null,
+		"linkedFrom": 6,
 		"data": {
-			"notes": ""
 		}
 	},
 	{
@@ -77,8 +68,8 @@
 		"url": "http://ebony.extra.hu/beryl/inside.html",
 		"username": "sukeena",
 		"password": "chase",
+		"linkedFrom": 7,
 		"data": {
-			"notes": ""
 		}
 	},
 	{
@@ -86,8 +77,8 @@
 		"url": "http://ebony.extra.hu/beryl/ziggy/chitchat.html",
 		"username": "sukeena",
 		"password": "chase",
+		"linkedFrom": 8,
 		"data": {
-			"notes": ""
 		}
 	},
 	{
@@ -95,8 +86,8 @@
 		"url": "http://ebony.extra.hu/beryl/ziggy/bokldkjgwkfkuk.html",
 		"username": "sukeena",
 		"password": "chase",
+		"linkedFrom": 9,
 		"data": {
-			"notes": ""
 		}
 	},
 	{
@@ -104,8 +95,17 @@
 		"url": "http://ebony.extra.hu/celia/moving.html",
 		"username": "learning",
 		"password": "tofly",
+		"linkedFrom": 10,
 		"data": {
-			"notes": ""
+		}
+	},
+	{
+		"levelNumber": 12,
+		"url": "http://ebony.extra.hu/celia/lurked.html",
+		"username": "learning",
+		"password": "tofly",
+		"linkedFrom": 11,
+		"data": {
 		}
 	},
 	{
@@ -113,8 +113,8 @@
 		"url": "http://ebony.extra.hu/celia/orange.html",
 		"username": "learning",
 		"password": "tofly",
+		"linkedFrom": 11,
 		"data": {
-			"notes": ""
 		}
 	}
     ]
