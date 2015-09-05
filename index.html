@@ -1,30 +1,39 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <head>
+	<meta charset='utf-8'>
+	<meta http-equiv="X-UA-Compatible" content="chrome=1">
 
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/github-dark.css" media="screen">
-    <script type="text/javascript" src="js/main.js"></script>
-    <script type="text/javascript" src="templates/level.js"></script>
+	<link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="stylesheets/github-dark.css" media="screen">
+	<script type="text/javascript" src="js/main.js"></script>
 
-    <title>E.B.O.N.Y Progress</title>
-  </head>
+	<title>E.B.O.N.Y Progress</title>
+    </head>
 
-  <body>
+    <body>
+	<header>
+	      <div class="container">
+		    <h1>E.B.O.N.Y Progress</h1>
+		    <h2>Links, passwords and additional notes for every level of E.B.O.N.Y unlocked so far</h2>
+	      </div>
+	</header>
 
-    <header>
-      <div class="container">
-        <h1>E.B.O.N.Y Progress</h1>
-        <h2>Links, passwords and additional notes for every level of E.B.O.N.Y unlocked so far</h2>
-      </div>
-    </header>
+	<div class="container">
+	</div>
 
-    <div class="container">
-     
-    </div>
-
-    
-  </body>
+	<script type="text/template" id="level-template">
+	    <div class="level">
+		<div class="level-number">Level <%- levelNumber %></div>
+		<div class="url">Url: <a href="<%- url %>"><%- url %></a></div>
+		<div class="username">Username: <%- username %></div>
+		<div class="password">Password: <%- password %></div>
+		<div class="data">
+		    Data:
+		    <!-- TODO: Fix this behaviour -->
+		    <%- data %>
+	        </div>
+	    </div>
+        </script>
+    </body>
 </html>
