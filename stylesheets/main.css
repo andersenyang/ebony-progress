@@ -1,3 +1,15 @@
-.level {
-    margin: 20px auto;
+.level-number, .level-details {
+    padding: 10px 15px;
 }
+
+.level-number {
+    border: 1px solid #232323;
+    background-color: #333333;
+}
+
+.level-details {
+    display: none;
+    border: 1px solid #232323;
+    background-color: #646464;
+}
+

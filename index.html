@@ -28,21 +28,23 @@
 	<script type="text/template" id="level-template">
 	    <div class="level">
 		<div class="level-number">Level <%- levelNumber %></div>
-		<div class="url">Url: <a href="<%- url %>"><%- url %></a></div>
-		<% if (username) { %>
-		    <div class="username">Username: <%- username %></div>
-		    <div class="password">Password: <%- password %></div>
-		<% } %>
-		<div class="linked-from">Linked From: <%- linkedFrom %></div>
-		<% if (!_.isEmpty(data)) { %>
-		    <div class="data">
-			Extra Data:
-			<!-- TODO: Fix this behaviour -->
-			<% _.each(data, function (key, val) { %>
-			    <div class="data-field"><%- key %>: <%- val %></div>
-			<% }) %>
-		    </div>
-		<% } %>
+		<div class="level-details">
+		    <div class="url">Url: <a href="<%- url %>"><%- url %></a></div>
+		    <% if (username) { %>
+			<div class="username">Username: <%- username %></div>
+			<div class="password">Password: <%- password %></div>
+		    <% } %>
+		    <div class="linked-from">Linked From: <%- linkedFrom %></div>
+		    <% if (!_.isEmpty(data)) { %>
+			<div class="data">
+			    Extra Data:
+			    <!-- TODO: Fix this behaviour -->
+			    <% _.each(data, function (key, val) { %>
+				<div class="data-field"><%- key %>: <%- val %></div>
+			    <% }) %>
+			</div>
+		    <% } %>
+		</div>
 	    </div>
         </script>
     </body>
