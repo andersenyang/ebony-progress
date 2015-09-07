@@ -2,14 +2,16 @@
     padding: 10px 15px;
 }
 
+.level {
+    border: 1px solid #151515;
+}
+
 .level-number {
-    border: 1px solid #232323;
     background-color: #333333;
 }
 
 .level-details {
     display: none;
-    border: 1px solid #232323;
-    background-color: #646464;
+    background-color: #464646;
 }
 
